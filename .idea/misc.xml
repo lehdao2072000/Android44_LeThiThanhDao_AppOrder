@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/DevPro/DatHang/app/src/main/res/layout/activity_giohang.xml" value="0.209375" />
-        <entry key="..\:/DevPro/DatHang/app/src/main/res/layout/activity_main.xml" value="0.16" />
-        <entry key="..\:/DevPro/DatHang/app/src/main/res/layout/activity_manhinhchinh.xml" value="0.18070652173913043" />
-        <entry key="..\:/DevPro/DatHang/app/src/main/res/layout/listview.xml" value="0.10182370820668693" />
+        <entry key="..\:/DevPro/Bt_Dialog/app/src/main/res/drawable/vien.xml" value="0.1" />
+        <entry key="..\:/DevPro/Bt_Dialog/app/src/main/res/layout/activity_main.xml" value="0.17415730337078653" />
+        <entry key="..\:/DevPro/Bt_Dialog/app/src/main/res/layout/cancels.xml" value="0.1" />
+        <entry key="..\:/DevPro/Bt_Dialog/app/src/main/res/layout/fra_defaul.xml" value="0.1" />
+        <entry key="..\:/DevPro/Bt_Dialog/app/src/main/res/layout/fra_file.xml" value="0.1" />
+        <entry key="..\:/DevPro/Bt_Dialog/app/src/main/res/layout/lo_cancels.xml" value="0.15260416666666668" />
+        <entry key="..\:/DevPro/Bt_Dialog/app/src/main/res/layout/save.xml" value="0.1" />
+        <entry key="..\:/DevPro/Bt_Dialog/app/src/main/res/menu/menu_ds.xml" value="0.22" />
       </map>
     </option>
   </component>

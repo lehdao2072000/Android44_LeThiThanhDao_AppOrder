@@ -1,66 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity"
-    android:layout_margin="20dp">
+    android:orientation="vertical">
 
-    <ImageView
-        android:src="@drawable/a"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"/>
-    <TextView
-        android:text="ĐĂNG NHẬP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"/>
+<!--        <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:orientation="horizontal">-->
 
-    <EditText
-        android:layout_marginTop="20dp"
-        android:id="@+id/etUserName"
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Create New Note"-->
+<!--            android:textSize="35dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginLeft="20dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/btnSave"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Save"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginLeft="40dp"/>-->
+<!--    </LinearLayout>-->
+
+        <EditText
+        android:id="@+id/etTitle"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/vien"
+        android:textSize="20dp"
+        android:hint="  Title"
+        android:maxLines="1"/>
+
+        <EditText
+        android:id="@+id/etDes"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/vien"
+        android:textSize="20dp"
+        android:hint="  Description"/>
+
+        <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="UserName"
-        android:inputType="text"
-        android:maxLines="1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:text="Remind me at: "
+        android:textSize="20dp"
+        android:layout_margin="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
-    <EditText
-        android:layout_marginTop="20dp"
-        android:id="@+id/etPassWord"
+            <TextView
+                android:id="@+id/tvgio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="14:20"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tvNgay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="04/03/2016"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Type: "
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/vien"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tvTen"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:text="Work"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/tvMuiTen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/muiten"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:maxLines="1"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
-    <TextView
-        android:id="@+id/tvThongBao"
+            android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tags: "
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tvtags"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Android, VTC, FPT, Game"/>
+    </LinearLayout>
+
+        <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="#D10606"/>
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Weeks: "
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tvweek"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Mon, Thu, Sat"/>
+    </LinearLayout>
 
-    <Button
-        android:layout_marginTop="40dp"
-        android:id="@+id/btnCick"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_gravity="center"
-        android:background="@drawable/vien_dangnhap"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"/>
+        <Button
+            android:id="@+id/btntune"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Tune"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/btnfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="From file"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btndefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="From defaults"
+            android:textSize="20dp"
+            android:visibility="gone"/>
 
-</LinearLayout>
+
+    </LinearLayout>
+</layout>
